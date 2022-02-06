@@ -4,6 +4,7 @@ buildscript {
         hilt_version = "2.40"
         retrofit_version = "2.9.0"
         lifecycle_version = '2.3.1'
+        navigationVersion = '2.3.5'
     }
     repositories {
         google()
