@@ -14,12 +14,11 @@
         android:theme="@style/Theme.SirfstudyMessanger">
         <activity
             android:name=".ui.home.BaseActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="true" />
+        <activity android:name=".ui.chat.ChatScreen">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.BaseActivity" />
         </activity>
         <activity
             android:name=".ui.auth.LoginActivity"

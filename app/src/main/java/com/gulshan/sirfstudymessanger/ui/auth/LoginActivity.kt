@@ -1,5 +1,6 @@
 package com.gulshan.sirfstudymessanger.ui.auth
 
+import SharedPref
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -27,7 +28,10 @@ class LoginActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[AuthViewModel::class.java]
         binding.viewmodel = viewModel
         binding.lifecycleOwner = this
+
+
         init()
+
     }
 
     fun init() {

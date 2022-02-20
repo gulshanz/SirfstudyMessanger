@@ -4,11 +4,16 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/drawable/chat_icon.xml" value="0.2885" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/drawable/ic_mic.xml" value="0.2065" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/activity_base.xml" value="0.2" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/activity_main.xml" value="0.3625" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/chat_input_box.xml" value="0.33" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/chat_screen.xml" value="0.2" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/fragment_active_users.xml" value="0.18541666666666667" />
-        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/fragment_chat.xml" value="0.18541666666666667" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/fragment_chat.xml" value="0.22" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/fragment_chat_screen.xml" value="0.3625" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/fragment_group_chat.xml" value="0.18541666666666667" />
+        <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/layout/item_chat.xml" value="0.5" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/menu/bottom_menu.xml" value="0.33" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/menu/home_menu.xml" value="0.25" />
         <entry key="..\:/MyStartups/SirfstudyMessanger/app/src/main/res/menu/home_nav.xml" value="0.3625" />

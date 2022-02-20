@@ -1,5 +1,6 @@
 package com.gulshan.sirfstudymessanger.ui.auth
 
+import SharedPref
 import android.content.SharedPreferences
 import android.icu.text.SymbolTable
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.gulshan.sirfstudymessanger.network.response.LoginResponse
 import com.gulshan.sirfstudymessanger.repository.AuthRepository
-import com.gulshan.sirfstudymessanger.util.SharedPrefService
+import com.gulshan.sirfstudymessanger.util.Keys
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -50,7 +51,7 @@ class AuthViewModel @Inject constructor(
     init {
         username.value = ""
         password.value = ""
-
+        checkIsLoggedIn()
     }
 
     private fun showError() {
@@ -59,6 +60,15 @@ class AuthViewModel @Inject constructor(
     }
 
     private fun saveAccessToken(accessToken: String) {
+        SharedPref.write(Keys.PREFERENCE_AUTH_KEY, accessToken)
+    }
 
+    private fun checkIsLoggedIn(){
+        val accessKey = SharedPref.read(Keys.PREFERENCE_AUTH_KEY, "")
+        if (accessKey.isNullOrEmpty()) {
+            loginStatus.postValue(false)
+        } else {
+            loginStatus.postValue(true)
+        }
     }
 }

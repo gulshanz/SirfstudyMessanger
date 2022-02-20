@@ -1,7 +1,7 @@
 package com.gulshan.sirfstudymessanger.util
 
 object Constants {
-    val SERVER_KEY =
-        "23df384ef57413d5ba1099ae65e0cb9fd06a67d9-9591c6946cf00d13f4eb5e69b8f2e361-83537263"
+    const val SERVER_KEY =
+        "fb1911487ff1de60984bc68ae83f23a61f61bf43-7b5e3321b2b363880f66d0ebccc47b74-83340827"
 
 }

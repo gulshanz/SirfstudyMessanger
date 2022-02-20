@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_chatFragment_to_activeUsers"
             app:destination="@id/activeUsers" />
+        <action
+            android:id="@+id/action_chatFragment_to_chatScreen"
+            app:destination="@id/chatScreen" />
     </fragment>
     <fragment
         android:id="@+id/groupChatFragment"
@@ -30,4 +33,9 @@
         android:name="com.gulshan.sirfstudymessanger.ui.home.activeUsers.ActiveUsers"
         android:label="fragment_active_users"
         tools:layout="@layout/fragment_active_users" />
+    <activity
+        android:id="@+id/chatScreen"
+        android:name="com.gulshan.sirfstudymessanger.ui.chat.ChatScreen"
+        android:label="chat_screen"
+        tools:layout="@layout/chat_screen" />
 </navigation>
