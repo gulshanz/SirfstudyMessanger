@@ -13,8 +13,8 @@ import com.gulshan.sirfstudymessanger.databinding.ChatScreenBinding
 class ChatScreen : AppCompatActivity() {
     lateinit var binding: ChatScreenBinding
 
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         binding = ChatScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
     }
